@@ -9,7 +9,7 @@ Create a new app on the Nylas dashboard. Navigate to "Hosted Authentication" > "
 
 **2. Clone this repo**
 ```shell
-git clone https://github.com/AnnaCoding42/Folderfy.git
+git clone https://github.com/FelixCodeur/Folderfy.git
 ```
 
 **3. Open backend**
