@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1f1f1f;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.loading {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 3px #5177b9;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+
+}
+
+/* Text under the laoding*/
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.loading-text span {
+    color: gray;
+    font-size: 10px;
+}
+
+@keyframes spin {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo span {
+        display: none;
+    }
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 237, 222);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    top: 30px;
+    position: absolute;
+    margin-top: 90px;
+    left:0;
+    right:0;
+}
+
+.projects-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    width: fit-content;
+    height: auto; /* Adjust based on content size */
+}
+
+.project {
+    background-color: #f3eedb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ensures square shape */
+    height: 200px; /* Ensures square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 70%;
+    height: 65%;
+    object-fit: cover;
+    transform: scale(0.6);
+    z-index: 1;
+    position: relative;
+    margin-bottom: 0;
+    margin: auto;
+}
+
+
+.project-details {
+    padding: 10px;
+    opacity: 1;
+    z-index: 4;
+    position: relative;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 100px;
+
+}
+
+.project h3 {
+    font-size: 1.1em;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.project p {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 4px;
+}
+
+.project {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ensures square shape */
+    height: 200px; /* Ensures square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

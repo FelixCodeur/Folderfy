@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.btn {
+    height: 37px;
+    border-radius: var(--small-button-border-radius);
+}
+
+.message {
+    font-size: 14px;
+    margin: var(--margin-medium);
+    padding: var(--pading-small);
+    border-radius: var(--small-button-border-radius);
+    max-width: 70%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    display: block;
+    position: relative;
+    border: var(--border);
+}
+
+.blue {
+    background-color: rgb(126, 126, 255);
+    color: white;
+}
+
+.right {
+    margin-left: auto;
+}
+
+section {
+    border: var(--border);
+    border-radius: var(--small-button-border-radius);
+    overflow-y: auto;
+    height: 90%;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    position: relative;
+}

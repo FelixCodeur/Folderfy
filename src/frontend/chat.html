@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat - Folderly</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cozycss@0.1.2/dist/cozycss.min.css">
+        <link rel="stylesheet" href="css/chat.css">
+    </head>
+
+    <body class="column">
+        <div class="loading" id="loading"></div>
+
+        <section class="w-60 column sb hidden">
+            <div id="messages" class="w-100">
+                <div class="message">Hi! I'm your virtual Folderly copilot, I can help you with your emails and calendar.</div>
+            </div>
+
+            <div class="row padding w-100">
+                <input type="text" id="message-input" class="input" placeholder="Type a message...">
+                <button id="send-message" class="btn">Send</button>
+            </div>
+        </section>
+
+        <script src="js/chat.js"></script>
+    </body>
+
+</html>

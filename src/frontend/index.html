@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Folderly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/costume3 (1).png" alt="Folderly">
+                <span>Folderly</span>
+            </div>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">View Source Code</a>
+                <a href="/login" class="sign-in" id="sign-in">Sign-in</a>
+                <a class="sign-in" id="logout">Logout</a>
+            </nav>
+        </header>
+        <main>
+            <img src="img/mainlogo-removebg-preview.png" alt="Our logo" class="logo" id="big-logo">
+            <h1>Welcome to Folderly!</h1>
+            <p>Take control of your emails and calendar.</p>
+            <div id="not-signed-in">
+                <a href="/login" class="sign-in-main">Try now!</a>
+            </div>
+            <div id="signed-in">
+                <a href="/dashboard" class="sign-in-main">Start</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Folderly. All rights reserved. Powered by Nylas.</p>
+        </footer>
+
+        <script>
+            const token = document.cookie?.split('token=')[1]?.split(';')[0];
+            if (!token) {
+                document.getElementById('not-signed-in').style.display = 'block';
+                document.getElementById('signed-in').style.display = 'none';
+
+                document.getElementById("logout").style.display = 'none';
+            } else {
+                document.getElementById('not-signed-in').style.display = 'none';
+                document.getElementById('signed-in').style.display = 'block';
+
+                document.getElementById("sign-in").style.display = 'none';
+            }
+
+            document.getElementById('logout').addEventListener('click', () => {
+                document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                document.location.href = '/index.html';
+            })
+        </script>
+    </body>
+
+</html>

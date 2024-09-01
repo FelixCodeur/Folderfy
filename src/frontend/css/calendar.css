@@ -1,0 +1,79 @@
+        /* Container styling */
+        .container {
+            margin-top: 20px;
+        }
+
+        /* Calendar header styling */
+        .fc-toolbar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Calendar title styling */
+        .fc-center h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Calendar button styling */
+        .fc-button {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            margin: 0 2px;
+        }
+
+        .fc-button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Today's date styling */
+        .fc-today {
+            background-color: #0056b3;
+        }
+
+        /* Event styling */
+        .fc-event {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+        /* Day grid styling */
+        .fc-day-grid .fc-day {
+            border: 1px solid #0056b3;
+        }
+
+        /* Hover effect on days */
+        .fc-day:hover {
+            background-color: #f8f9fa;
+        }
+
+        .event {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightblue;
+            padding: 20px;
+            position: absolute;
+            z-index: 1;
+            border-radius: 12px;
+        }
+
+        .tooltip {
+            position: absolute;
+            z-index: 10001;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            max-width: 200px;
+            text-align: center;
+            display: none;
+        }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mails - Folderly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/mail.css">
+
+    </head>
+
+    <body>
+        <script defer src="js/api.js"></script>
+        <script defer src="js/mail.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/cozycss@0.1.2/dist/cozycss.min.js"></script>
+
+        <main>
+            <div class="sidebar">
+                <div class="top-bar">
+                    <input type="text" id="search-bar" placeholder="Search..." class="search-bar">
+                </div>
+                <ul id="email-list">
+                    <!-- Emails will be dynamically added here -->
+                    <span class="loading"></span>
+                    <p class="loading-text">Loading emails<br><span>This operation may take up to few seconds.</span></p>
+                </ul>
+
+            </div>
+            <div class="content">
+                <div id="email-content">
+                    <div class="showSideBar" onclick="makeResponsive()">←</div>
+                    <h2>Select an email to display its content...</h2>
+                    <!-- The email content will be displayed here -->
+                </div>
+            </div>
+
+            <div id="suggestion-popup">
+                <div id="suggestion-popup-content" class="popup-content">
+                    <div id="suggestion-popup-text">
+                        <span class="loading"></span>
+                    </div>
+                    <div class="flex">
+                        <button id="add-suggestion" class="popup-close" onclick="addSuggestion()">Add</button>
+                        <button class="popup-close" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reply-popup">
+                <div id="reply-popup-content" class="popup-content">
+                    <div id="reply-popup-text">
+                        <span class="loading"></span>
+                    </div>
+                    <div class="flex">
+                        <button class="popup-close" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="summarize-popup">
+                <div id="summarize-popup-content" class="popup-content">
+                    <div id="summarize-popup-text">
+                        <span class="loading"></span>
+                    </div>
+                    <div class="flex">
+                        <button class="popup-close" onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="translate-popup">
+                <div id="translate-popup-content" class="popup-content">
+                    <div id="translate-popup-text">
+                        <div id="translate-select" class="dropdown" data-value="english">
+                            <button>English</button>
+
+                            <div>
+                                <button data-value="en">English</button>
+                                <button data-value="es">Spanish</button>
+                                <button data-value="fr">French</button>
+                                <button data-value="de">German</button>
+                                <button data-value="it">Italian</button>
+                                <button data-value="ja">Japanese</button>
+                                <button data-value="ko">Korean</button>
+                                <button data-value="pt">Portuguese</button>
+                                <button data-value="ru">Russian</button>
+                                <button data-value="zh">Chinese</button>
+                                <button data-value="ar">Arabic</button>
+                                <button data-value="hi">Hindi</button>
+                                <button data-value="vi">Vietnamese</button>
+                                <button data-value="th">Thai</button>
+                                <button data-value="tr">Turkish</button>
+                                <button data-value="uk">Ukrainian</button>
+                                <button data-value="ur">Urdu</button>
+                                <button data-value="pl">Polish</button>
+                                <button data-value="nl">Dutch</button>
+                                <button data-value="ro">Romanian</button>
+                                <button data-value="cs">Czech</button>
+                                <button data-value="sv">Swedish</button>
+                                <button data-value="el">Greek</button>
+                                <button data-value="bg">Bulgarian</button>
+                                <button data-value="uk">Ukrainian</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button class="popup-close">Translate</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
