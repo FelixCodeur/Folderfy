@@ -1,5 +1,5 @@
 # Folderfly
-### bla bla
+### Guide
 
 ## Installation
 > *NOTE: this projects requires [python](https://python.org) and pip installed on your system.*
